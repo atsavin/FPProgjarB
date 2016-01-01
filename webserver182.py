@@ -23,7 +23,7 @@ class MemprosesClient(threading.Thread):
 				print data
 				if(data[5: -22] == 'foto1'):
 					self.client_socket.send(get_file('gambar.jpg'))
-					break
+				break
 				if(data[5: -22] == 'foto2'):
 					self.client_socket.send(get_file('gambar2.jpg'))
 					break
