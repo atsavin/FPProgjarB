@@ -3,6 +3,6 @@
 
 # Mohammad Rijal
 # Anugerah Yulindra Satyaji
-# Nanang
+# Nanang Taufan Budiansyah
 # Ishardan
-# Eko
+# Eko Putro Fitrianto
