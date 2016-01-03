@@ -34,16 +34,16 @@ while True:
                 message = message + req_recv
                 print message
                 #if(message.startswith("tanda-GET /8 HTTP/1.1")):
-                if(message.startswith("tanda-GET /1 HTTP/1.1")):
-                        #with open("gambar2.jpg" ,"rb") as ImageFile:
-                        #        hasilencode=base64.b64encode(ImageFile.read())
-                        #        print hasilencode
-                        data_picture = get_file('gambar2.jpg')
+
+                if(message.startswith("tanda-GET / HTTP/1.1")):
+                        data_picture = get_file('gambar5.png')
                         connection.send(data_picture)
                         print (detail_info)
 
-                        ##connection.send(data)
-                        #self.client_socket.send(get_file('gambar2.jpg'))
+                elif(message.startswith("tanda-GET /1 HTTP/1.1")):
+                        data_picture = get_file('gambar2.jpg')
+                        connection.send(data_picture)
+                        print (detail_info)
 
                 elif(message.startswith("tanda-GET /2 HTTP/1.1")):
                         data_picture = get_file('gambar3.jpg')
